@@ -34,6 +34,13 @@ $config = [
         ]
     ],
     'components' => [
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views' => '@vendor/almasaeed2010/adminlte/pages'
+                ],
+            ],
+        ],
         'authManager' => [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
         ],
@@ -80,6 +87,8 @@ $config = [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
             'site/*',
+            'user/registration/register',
+            'gii/*',
             // 'admin/*',
         ]
     ],
