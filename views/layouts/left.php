@@ -23,7 +23,7 @@
                 </span>
             </div>
         </form>
-        <!-- naf -->
+        <!-- nafget -->
         <?= dmstr\widgets\Menu::widget(
             [
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget' => 'tree'],
